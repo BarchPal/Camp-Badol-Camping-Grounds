@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badol Camping Grounds | Kapangan, Benguet — 1400 MASL</title>
+    <meta name="description"
+        content="Badol Camping Grounds — your gateway to get away. Experience nature at 1400 MASL in Kapangan, Benguet. Book your mountain escape today.">
+    <link rel="icon" type="image/png" href="logotranbg.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header" id="mainHeader">
+        <div class="header-inner">
+            <a href="index.html" class="logo" id="siteLogo">
+                <img src="logotranbg.png" alt="Badol Camping Grounds Logo" class="logo-img">
+                <span class="logo-text">Badol Camping Grounds</span>
+            </a>
+            <nav class="nav-desktop" id="navDesktop">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="rates.html" class="nav-link">Rates</a>
+                <a href="contact.html" class="nav-link nav-cta">Book Now</a>
+            </nav>
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-link active">Home</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="experience.html" class="mobile-link">Experience</a>
+            <a href="rates.html" class="mobile-link">Rates</a>
+            <a href="contact.html" class="mobile-link mobile-cta">Book Now</a>
+        </nav>
+    </div>
+
+    <main>
+
+        <section class="hero" id="hero">
+            <div class="hero-slideshow" id="heroSlideshow">
+                <div class="slide active"
+                    style="background-image: url('Pics/618089176_26078038251808457_7497567061012904055_n.jpg');"></div>
+                <div class="slide"
+                    style="background-image: url('Pics/480542197_661099912934757_9093470119345464802_n.jpg');"></div>
+                <div class="slide"
+                    style="background-image: url('Pics/472366972_631553649216819_4979253787001771004_n.jpg');"></div>
+                <div class="slide"
+                    style="background-image: url('Pics/470236878_616224150749769_1136020287192556613_n.jpg');"></div>
+                <div class="slide"
+                    style="background-image: url('Pics/638910749_26352073111071635_4884096256286103367_n.jpg');"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-meta">
+                    <span class="hero-location"><i class="fas fa-map-marker-alt"></i> Kapangan, Benguet</span>
+                    <span class="hero-elevation"><i class="fas fa-mountain"></i> 1,400 MASL</span>
+                </div>
+                <h1 class="hero-title">Badol Camping Grounds</h1>
+                <p class="hero-tagline">
+                    Your <span class="highlight">GATEWAY</span> to <span class="highlight">GET AWAY</span>
+                </p>
+                <p class="hero-sub-tagline">The campsite that lets you attune with yourself and with nature. -
+                    REJUVENATE!</p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn btn-primary">Book Your Stay</a>
+                    <a href="#about" class="btn btn-outline">Explore More</a>
+                </div>
+            </div>
+            <div class="slide-indicator" id="slideIndicator">
+                <div class="slide-counter">
+                    <span class="current-slide" id="currentSlide">01</span>
+                    <span class="slide-divider">/</span>
+                    <span class="total-slides" id="totalSlides">05</span>
+                </div>
+                <div class="slide-progress-bars">
+                    <div class="progress-bar active" data-index="0">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-bar" data-index="1">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-bar" data-index="2">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-bar" data-index="3">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-bar" data-index="4">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+            </div>
+        </section>
+
+
+        <section class="section intro" id="about">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-text" data-animate="fadeInUp">
+                        <span class="section-label">Welcome to Badol</span>
+                        <h2 class="section-heading">A Sanctuary Above the Clouds</h2>
+                        <p>Nestled deep in the pine-covered mountains of Kapangan, Benguet, Badol Camping Grounds
+                            offers a pristine escape at 1,400 meters above sea level. Covering 5,000 sqm of lush
+                            forested land, the campsite is a haven where the air is crisp, the skies are vast, and the
+                            trails lead to hidden waterfalls and breathtaking panoramic views of the Cordillera
+                            highlands.</p>
+                        <p>We strive to boost physical and mental wellness through nature and self-attunement activities
+                            in a self-sustained, community-involved environment — so that we and future generations can
+                            live the best we can on the best natural environment the only Earth we have has to offer.
+                        </p>
+                        <div
+                            style="margin-top: 1rem; padding: 1rem; background-color: rgba(62, 137, 20, 0.1); border-left: 4px solid var(--clr-primary); border-radius: 4px; color: var(--clr-text); font-weight: 500;">
+                            <i class="fas fa-bullhorn" style="color: var(--clr-primary); margin-right: 0.5rem;"></i>
+                            <strong>Exclusive Camping:</strong> We guarantee maximum privacy by allowing only 1 group to
+                            camp at a time.
+                        </div>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                            <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                            <a href="https://docs.google.com/document/d/1Rim5CgKp4Joo7KV44JLjJd9YkDrVsqBi/edit"
+                                target="_blank" class="btn btn-outline"
+                                style="border-color: var(--clr-primary); color: var(--clr-primary);"><i
+                                    class="fas fa-file-pdf" style="margin-right: 0.5rem;"></i> Camp Profile</a>
+                        </div>
+                    </div>
+                    <div class="intro-carousel" data-animate="fadeInUp" id="introCarousel">
+                        <div class="intro-carousel-track" id="introCarouselTrack">
+                            <div class="intro-carousel-slide"><img src="Pics/show1.jpg" alt="Badol Camping Grounds"
+                                    loading="lazy"></div>
+                            <div class="intro-carousel-slide"><img src="Pics/show2.jpg" alt="Badol Camping Grounds"
+                                    loading="lazy"></div>
+                            <div class="intro-carousel-slide"><img src="Pics/show3.jpg" alt="Badol Camping Grounds"
+                                    loading="lazy"></div>
+                            <div class="intro-carousel-slide"><img src="Pics/show4.jpg" alt="Badol Camping Grounds"
+                                    loading="lazy"></div>
+                            <div class="intro-carousel-slide"><img src="Pics/show5.jpg" alt="Badol Camping Grounds"
+                                    loading="lazy"></div>
+                        </div>
+                        <div class="intro-carousel-fade intro-carousel-fade--top"></div>
+                        <div class="intro-carousel-fade intro-carousel-fade--bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section highlights" id="highlights">
+            <div class="container">
+                <span class="section-label center">Why Choose Badol</span>
+                <h2 class="section-heading center" data-animate="fadeInUp">Experience the Highlands</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-card" data-animate="fadeInUp">
+                        <div class="highlight-icon"><i class="fas fa-mountain"></i></div>
+                        <h3>1,400 MASL Elevation</h3>
+                        <p>Wake up above the clouds with cool mountain air and jaw-dropping sunrise views every morning.
+                        </p>
+                    </div>
+                    <div class="highlight-card" data-animate="fadeInUp">
+                        <div class="highlight-icon"><i class="fas fa-water"></i></div>
+                        <h3>Hidden Waterfalls</h3>
+                        <p>Trek the Creek Trail to discover up to 4 waterfalls, 3 of which feature safe, crystal-clear
+                            pools you can swim in.</p>
+                    </div>
+                    <div class="highlight-card" data-animate="fadeInUp">
+                        <div class="highlight-icon"><i class="fas fa-tree"></i></div>
+                        <h3>Pine Forest Sanctuary</h3>
+                        <p>Camp beneath towering Benguet pine trees in a lush, unspoiled 0.5-hectare forest setting.</p>
+                    </div>
+                    <div class="highlight-card" data-animate="fadeInUp">
+                        <div class="highlight-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Wellness & Attunement</h3>
+                        <p>Boost your physical and mental wellness through deep connection with nature and
+                            self-attunement
+                            activities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section activities-preview" id="activities">
+            <div class="container">
+                <span class="section-label center">Things to Do</span>
+                <h2 class="section-heading center" data-animate="fadeInUp">Your Next Adventure Awaits</h2>
+                <div class="activities-grid">
+                    <div class="activity-item" data-animate="fadeInUp">
+                        <div class="activity-img">
+                            <img src="Pics/water2.jpg" alt="Trekking near Badol" loading="lazy">
+                        </div>
+                        <div class="activity-info">
+                            <h3>Trekking & Waterfalls</h3>
+                            <p>Explore the Creek Trail with up to 4 waterfalls, or trek to Camp Utopia and Sammy's Peak
+                                for panoramic views.</p>
+                        </div>
+                    </div>
+                    <div class="activity-item" data-animate="fadeInUp">
+                        <div class="activity-img">
+                            <img src="Pics/472366972_631553649216819_4979253787001771004_n.jpg"
+                                alt="Camping and bonfire" loading="lazy">
+                        </div>
+                        <div class="activity-info">
+                            <h3>Camping & Bonfires</h3>
+                            <p>Pitch your tent under pine trees, gather around the fire pit, and stargaze at 1,400 MASL.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item" data-animate="fadeInUp">
+                        <div class="activity-img">
+                            <img src="Pics/480542197_661099912934757_9093470119345464802_n.jpg" alt="Sunrise viewing"
+                                loading="lazy">
+                        </div>
+                        <div class="activity-info">
+                            <h3>Sunrise & Sunset</h3>
+                            <p>Catch golden hour at the campsite or hike to Sammy's Peak for breathtaking highland
+                                views.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center; margin-top:2.5rem;">
+                    <a href="experience.html" class="btn btn-primary" data-animate="fadeInUp">View All Activities</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section reviews" id="reviews">
+            <div class="container">
+                <span class="section-label center">What Guests Say</span>
+                <h2 class="section-heading center" data-animate="fadeInUp">Reviews</h2>
+                <div class="reviews-carousel" data-animate="fadeInUp" id="reviewsCarousel">
+                    <div class="reviews-track" id="reviewsTrack">
+                        <div class="review-card" id="review-1">
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text" id="review-text-1">"Solid experience! napakabait ni sir koyang
+                                Weisser! malinis ang camp sobrang tahimik! 🤩"</p>
+                            <p class="review-author" id="review-author-1">— Voughdan Del Rosario Belleca</p>
+                        </div>
+                        <div class="review-card" id="review-2">
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text" id="review-text-2">"Went there last December, it was so
+                                beautiful❤️❤️❤️ worth all the effort, I still preferred the night hike so the view would
+                                surprise me the next day."</p>
+                            <p class="review-author" id="review-author-2">— Vinia Inobaya</p>
+                        </div>
+                        <div class="review-card" id="review-3">
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text" id="review-text-3">"Thank you so much Badol Camping Grounds! They
+                                were so accommodating from the very beginning! Very thoughtful of us who have little
+                                ones.This has been an unforgettable moment. We would surely come back!"</p>
+                            <p class="review-author" id="review-author-3">— Abegail Rice</p>
+                        </div>
+                        <div class="review-card" id="review-4">
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text" id="review-text-4">"Highly recommended ❤️"</p>
+                            <p class="review-author" id="review-author-4">— Pinky Olleres</p>
+                        </div>
+                        <div class="review-card" id="review-5">
+                            <div class="review-stars">Recommends the Camping Grounds</div>
+                            <p class="review-text" id="review-text-5">"Exclusive. Raw. Beautiful. Need I say more? And
+                                the most accommodating owner ever! Thank you Sir Weiserr for the best experience! Will
+                                surely go back ✨"</p>
+                            <p class="review-author" id="review-author-5">— Jessamine Alvaro</p>
+                        </div>
+                    </div>
+                    <button class="reviews-nav reviews-nav--prev" id="reviewsPrev" aria-label="Previous reviews">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="reviews-nav reviews-nav--next" id="reviewsNext" aria-label="Next reviews">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="reviews-dots" id="reviewsDots"></div>
+            </div>
+        </section>
+
+
+        <section class="section cta" id="book">
+            <div class="cta-bg">
+                <img src="Pics/480542197_661099912934757_9093470119345464802_n.jpg" alt="Golden hour at Badol"
+                    loading="lazy">
+            </div>
+            <div class="cta-overlay"></div>
+            <div class="container cta-content" data-animate="fadeInUp">
+                <h2>This is Not Your Ordinary Campsite</h2>
+                <p>Take some time off and get close to nature. Reserve your camping spot at Badol Camping Grounds.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Reserve My Camping Spot Now</a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="logotranbg.png" alt="Badol Camping Grounds" class="footer-logo">
+                <p>Your gateway to get away. Badol Camping Grounds — Kapangan, Benguet.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigate</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="rates.html">Rates</a>
+                <a href="guidelines.html">Guidelines</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Liteng, Sagubo, Kapangan, Benguet</p>
+                <p><i class="fas fa-phone"></i> 09278351068</p>
+                <p><i class="fas fa-envelope"></i> <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=badolcamping@gmail.com" target="_blank"
+                        style="text-decoration: underline; text-underline-offset: 3px;">badolcamping@gmail.com</a></p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/BadolCamping" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Badol Camping Grounds. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
