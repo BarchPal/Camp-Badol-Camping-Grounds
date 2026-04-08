@@ -489,27 +489,77 @@
             this.dotsContainer = document.getElementById('reviewsDots');
             this.cards = Array.from(this.track.querySelectorAll('.review-card'));
             this.total = this.cards.length;
-            this.visible = 3;
             this.current = 0;
-            this.maxIndex = this.total - this.visible;
+
+            
+            this.touchStartX = 0;
+            this.touchEndX = 0;
+            this.swipeThreshold = 50;
 
             this.init();
         }
 
         init() {
-
-            for (let i = 0; i <= this.maxIndex; i++) {
-                const dot = document.createElement('button');
-                dot.className = 'reviews-dot' + (i === 0 ? ' active' : '');
-                dot.setAttribute('aria-label', `Go to review group ${i + 1}`);
-                dot.addEventListener('click', () => this.goTo(i));
-                this.dotsContainer.appendChild(dot);
-            }
+            this.updateVisibleCount();
 
             this.prevBtn.addEventListener('click', () => this.prev());
             this.nextBtn.addEventListener('click', () => this.next());
 
+            
+            this.track.addEventListener('touchstart', (e) => {
+                this.touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            this.track.addEventListener('touchend', (e) => {
+                this.touchEndX = e.changedTouches[0].screenX;
+                this.handleSwipe();
+            }, { passive: true });
+
+            window.addEventListener('resize', () => {
+                this.updateVisibleCount();
+                this.goTo(this.current);
+            });
+
             this.updateButtons();
+            this.renderDots();
+        }
+
+        handleSwipe() {
+            const distance = this.touchEndX - this.touchStartX;
+            if (Math.abs(distance) > this.swipeThreshold) {
+                if (distance < 0) {
+                    this.next();
+                } else {
+                    this.prev();
+                }
+            }
+        }
+
+        updateVisibleCount() {
+            const width = window.innerWidth;
+            if (width < 768) {
+                this.visible = 1;
+            } else if (width < 1024) {
+                this.visible = 2;
+            } else {
+                this.visible = 3;
+            }
+            this.maxIndex = this.total - this.visible;
+            if (this.current > this.maxIndex) this.current = this.maxIndex;
+
+            this.renderDots();
+        }
+
+        renderDots() {
+            if (!this.dotsContainer) return;
+            this.dotsContainer.innerHTML = '';
+            for (let i = 0; i <= this.maxIndex; i++) {
+                const dot = document.createElement('button');
+                dot.className = 'reviews-dot' + (i === this.current ? ' active' : '');
+                dot.setAttribute('aria-label', `Go to review group ${i + 1}`);
+                dot.addEventListener('click', () => this.goTo(i));
+                this.dotsContainer.appendChild(dot);
+            }
         }
 
         goTo(index) {
@@ -532,7 +582,7 @@
 
         updateButtons() {
             this.prevBtn.disabled = this.current === 0;
-            this.nextBtn.disabled = this.current >= this.maxIndex;
+            this.nextBtn.disabled = this.current >= this.maxIndex || this.maxIndex < 0;
         }
 
         updateDots() {
@@ -542,6 +592,8 @@
             });
         }
     }
+
+
 
 
 

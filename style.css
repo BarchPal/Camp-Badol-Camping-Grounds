@@ -1059,6 +1059,7 @@ p {
     will-change: transform;
 }
 
+
 .review-card {
     flex: 0 0 calc((100% - var(--sp-xl) * 2) / 3);
     background: var(--clr-cream);
@@ -1069,13 +1070,10 @@ p {
     display: flex;
     flex-direction: column;
     min-height: 220px;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
-.review-card:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-md), var(--shadow-glow);
-    border-color: var(--clr-forest);
-}
 
 .review-stars {
     font-size: 1.3rem;
@@ -1479,6 +1477,7 @@ p {
     margin-top: var(--sp-3xl);
 }
 
+
 .review-card {
     background: var(--clr-cream);
     border-radius: var(--r-lg);
@@ -1489,10 +1488,6 @@ p {
     flex-direction: column;
 }
 
-.review-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-}
 
 .review-stars {
     color: #f0c56d;
@@ -2373,9 +2368,18 @@ p {
         display: none;
     }
 
+    .header-inner {
+        padding: 0 var(--sp-lg);
+    }
+
     .hamburger-btn {
         display: flex;
     }
+
+    .logo-text {
+        font-size: 1.1rem;
+    }
+
 
     .highlights-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -2447,6 +2451,11 @@ p {
     .container {
         padding: 0 var(--sp-lg);
     }
+
+    .hero-title {
+        font-size: clamp(2.8rem, 7vw, 4rem);
+    }
+
 
     .section {
         padding: var(--sp-4xl) 0;
@@ -2550,10 +2559,20 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .steps-timeline::before {
-        left: 24px;
+    .reviews-track {
+        gap: var(--sp-md);
+    }
+
+    .review-card {
+        flex: 0 0 100%;
+        min-height: auto;
+    }
+
+    .intro-carousel {
+        height: 600px;
     }
 }
+
 
 
 
@@ -2566,9 +2585,26 @@ p {
         font-size: 1.1rem;
     }
 
+    .logo-text {
+        font-size: 0.95rem;
+    }
+
+    .logo-text-suffix {
+        display: none;
+    }
+
+    .header-inner {
+        padding: 0 var(--sp-md);
+    }
+
+    .intro-carousel {
+        height: 450px;
+    }
+
     .highlights-grid {
         grid-template-columns: 1fr;
     }
+
 
     .slide-counter {
         font-size: 0.9rem;
